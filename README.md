@@ -16,7 +16,7 @@ python -m pip install -r requirements.txt
 python -m streamlit run app.py --server.address 127.0.0.1
 ```
 
-浏览器打开 http://localhost:8501 。macOS 安装后也可双击 `start.command` 启动。默认 **Demo 模式无需任何 key**，规则输出可重复，适合面试演示。此模式只是有限的正则基线，不等于 LLM，也不是生产检测器。
+浏览器打开 http://localhost:8501 。macOS 安装后也可执行 `sh start.command` 启动。默认 **Demo 模式无需任何 key**，规则输出可重复，适合面试演示。此模式只是有限的正则基线，不等于 LLM，也不是生产检测器。
 
 OpenAI 模式（可选）：
 
@@ -92,7 +92,7 @@ docs/                 产品说明、验证记录
 python -m pytest -q
 python -m evaluation.evaluate --mode demo
 # 会调用 API、产生费用；需已配置 key：
-python -m evaluation.evaluate --mode openai --outputevaluation/latest-openai.json
+python -m evaluation.evaluate --mode openai --output evaluation/latest-openai.json
 # 使用实际本地审核记录计算申诉改判：
 python -m evaluation.evaluate --db data/trustguard.sqlite3
 ```
