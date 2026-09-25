@@ -2,7 +2,7 @@
 
 面向全球内容社区的 Trust & Safety 产品原型：把风险识别、政策依据、原文证据、处置建议、用户解释、申诉及人工复核串成可运行闭环。
 
-**Portfolio prototype，非 rednote 产品或内部政策。Global / Singapore policies 均为自拟演示规则，不是法律或监管意见。** 无真实平台处罚能力。
+Global / Singapore 政策均为项目自拟的 prototype policy，用于验证审核流程，不代表任何平台的内部政策或法律、监管要求。处置操作仅记录在本地，不会影响真实平台账户。
 
 ## 3 分钟启动
 
@@ -16,7 +16,7 @@ python -m pip install -r requirements.txt
 python -m streamlit run app.py --server.address 127.0.0.1
 ```
 
-浏览器打开 http://localhost:8501 。macOS 安装后也可执行 `sh start.command` 启动。默认 **Demo 模式无需任何 key**，规则输出可重复，适合面试演示。此模式只是有限的正则基线，不等于 LLM，也不是生产检测器。
+浏览器打开 http://localhost:8501 。macOS 安装后也可执行 `sh start.command` 启动。默认 **Demo 模式无需任何 key**，使用可重复的规则输出，便于体验完整流程。此模式采用有限的正则规则，不调用模型。
 
 OpenAI 模式（可选）：
 
@@ -30,15 +30,15 @@ cp .env.example .env
 
 API 接口依据：[OpenAI Structured Outputs 官方文档](https://developers.openai.com/api/docs/guides/structured-outputs)。已做接口模拟测试；是否完成真实 API 调用见 `docs/VALIDATION.md`。
 
-## 面试演示路线（约 8 分钟）
+## 使用示例
 
 1. 选 TG-001：保证收益 + Telegram 导流 → 展示 Triage、P1/P3/P4、证据原文和字符位置。
 2. 查看 REMOVE 建议，同时展示人工必审：检测不等于处罚，原型没有自动封号。
 3. 在案件页填写审核人、理由并模拟 `remove`。
 4. 提交“这是课堂反诈引用”的申诉；系统独立复核，不向模型透露原始判断。新陈述仍需核验。
 5. 换审核人记录核验理由并模拟 `allow`；审计历史保留两次判断，overturn rate 可计算。
-6. TG-014 定存信息、TG-016 引用诈骗警示、TG-027 持牌声明：讨论误伤、市场差异、外部核验边界。
-7. 打开评估页，解释灰区漏升级、召回与人工队列负担的取舍。
+6. TG-014 定存信息、TG-016 引用诈骗警示、TG-027 持牌声明：查看不同上下文和市场规则对审核结果的影响。
+7. 打开评估页，查看误报、召回和人工升级情况。
 
 ## 流程与职责
 
