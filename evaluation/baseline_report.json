@@ -1,0 +1,533 @@
+{
+  "generated_at": "2026-09-25T07:29:37.701175+00:00",
+  "mode": "demo",
+  "dataset": "hand-authored synthetic smoke set; not an independent benchmark",
+  "definitions": "Positive = grounded violation prediction, including human-pending suggestions. Uncertain predictions count as not-positive (FN on positives). Gray labels excluded from binary metrics, included in escalation metrics. No metric measures executed punishment. Null means zero denominator.",
+  "metrics": {
+    "n": 36,
+    "binary_n": 26,
+    "gray_n": 10,
+    "tp": 12,
+    "fp": 0,
+    "fn": 1,
+    "tn": 13,
+    "precision": 1.0,
+    "recall": 0.9230769230769231,
+    "false_positive_rate": 0.0,
+    "human_escalation_rate": 0.6944444444444444,
+    "gray_escalation_rate": 0.6,
+    "binary_abstention_rate": 0.2692307692307692,
+    "decided_accuracy": 1.0,
+    "provider_error_count": 0
+  },
+  "by_market": {
+    "Global": {
+      "n": 26,
+      "binary_n": 19,
+      "gray_n": 7,
+      "tp": 9,
+      "fp": 0,
+      "fn": 1,
+      "tn": 9,
+      "precision": 1.0,
+      "recall": 0.9,
+      "false_positive_rate": 0.0,
+      "human_escalation_rate": 0.6923076923076923,
+      "gray_escalation_rate": 0.42857142857142855,
+      "binary_abstention_rate": 0.3157894736842105,
+      "decided_accuracy": 1.0,
+      "provider_error_count": 0
+    },
+    "Singapore": {
+      "n": 10,
+      "binary_n": 7,
+      "gray_n": 3,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "tn": 4,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_positive_rate": 0.0,
+      "human_escalation_rate": 0.7,
+      "gray_escalation_rate": 1.0,
+      "binary_abstention_rate": 0.14285714285714285,
+      "decided_accuracy": 1.0,
+      "provider_error_count": 0
+    }
+  },
+  "rows": [
+    {
+      "id": "TG-001",
+      "market": "Global",
+      "label": "violation",
+      "prediction": "violation",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-002",
+      "market": "Global",
+      "label": "violation",
+      "prediction": "violation",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-003",
+      "market": "Global",
+      "label": "violation",
+      "prediction": "violation",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-004",
+      "market": "Global",
+      "label": "violation",
+      "prediction": "violation",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-005",
+      "market": "Global",
+      "label": "violation",
+      "prediction": "violation",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-006",
+      "market": "Global",
+      "label": "violation",
+      "prediction": "violation",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-007",
+      "market": "Global",
+      "label": "violation",
+      "prediction": "violation",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-008",
+      "market": "Singapore",
+      "label": "violation",
+      "prediction": "violation",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-009",
+      "market": "Singapore",
+      "label": "violation",
+      "prediction": "violation",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-010",
+      "market": "Global",
+      "label": "violation",
+      "prediction": "violation",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-011",
+      "market": "Singapore",
+      "label": "violation",
+      "prediction": "violation",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-012",
+      "market": "Global",
+      "label": "violation",
+      "prediction": "uncertain",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-013",
+      "market": "Global",
+      "label": "benign",
+      "prediction": "benign",
+      "human": false,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-014",
+      "market": "Singapore",
+      "label": "benign",
+      "prediction": "benign",
+      "human": false,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-015",
+      "market": "Global",
+      "label": "benign",
+      "prediction": "benign",
+      "human": false,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-016",
+      "market": "Global",
+      "label": "benign",
+      "prediction": "uncertain",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-017",
+      "market": "Singapore",
+      "label": "benign",
+      "prediction": "benign",
+      "human": false,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-018",
+      "market": "Global",
+      "label": "benign",
+      "prediction": "benign",
+      "human": false,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-019",
+      "market": "Global",
+      "label": "benign",
+      "prediction": "uncertain",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-020",
+      "market": "Global",
+      "label": "benign",
+      "prediction": "uncertain",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-021",
+      "market": "Global",
+      "label": "benign",
+      "prediction": "benign",
+      "human": false,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-022",
+      "market": "Singapore",
+      "label": "benign",
+      "prediction": "uncertain",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-023",
+      "market": "Global",
+      "label": "benign",
+      "prediction": "uncertain",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-024",
+      "market": "Singapore",
+      "label": "benign",
+      "prediction": "benign",
+      "human": false,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-025",
+      "market": "Global",
+      "label": "benign",
+      "prediction": "uncertain",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-026",
+      "market": "Global",
+      "label": "uncertain",
+      "prediction": "uncertain",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-027",
+      "market": "Singapore",
+      "label": "uncertain",
+      "prediction": "uncertain",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-028",
+      "market": "Global",
+      "label": "uncertain",
+      "prediction": "uncertain",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-029",
+      "market": "Singapore",
+      "label": "uncertain",
+      "prediction": "uncertain",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-030",
+      "market": "Global",
+      "label": "uncertain",
+      "prediction": "benign",
+      "human": false,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-031",
+      "market": "Global",
+      "label": "uncertain",
+      "prediction": "benign",
+      "human": false,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-032",
+      "market": "Global",
+      "label": "uncertain",
+      "prediction": "violation",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-033",
+      "market": "Singapore",
+      "label": "uncertain",
+      "prediction": "uncertain",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-034",
+      "market": "Global",
+      "label": "uncertain",
+      "prediction": "benign",
+      "human": false,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-035",
+      "market": "Global",
+      "label": "uncertain",
+      "prediction": "benign",
+      "human": false,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    },
+    {
+      "id": "TG-036",
+      "market": "Global",
+      "label": "violation",
+      "prediction": "violation",
+      "human": true,
+      "provider_error": false,
+      "model": "deterministic-rules-v1",
+      "latency_ms": 0,
+      "policy_version": [
+        "prototype-1.0"
+      ]
+    }
+  ],
+  "appeals": {
+    "overturn_rate": null,
+    "note": "No live database supplied. Use --db to measure resolved appeals; never synthesize live overturn results."
+  }
+}
